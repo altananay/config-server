@@ -6,7 +6,7 @@ spring:
       database: turkcell-invoicedb
       uri: mongodb://localhost:27018
       username: turkcell
-      password: 12345
+      password: 123456
   kafka:
     consumer:
       auto-offset-reset: earliest
