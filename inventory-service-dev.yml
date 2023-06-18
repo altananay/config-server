@@ -18,7 +18,7 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         enable:
-          idempotence: true
+          idempotence: false
     consumer:
       auto-offset-reset: earliest
       bootstrap-servers: http://localhost:9093
