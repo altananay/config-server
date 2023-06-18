@@ -16,7 +16,7 @@ spring:
             trusted:
               packages: "*"
         enable:
-          idempotence: true
+          idempotence: false
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
 eureka:
   client:
