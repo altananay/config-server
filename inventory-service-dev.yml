@@ -16,6 +16,9 @@ spring:
       bootstrap-servers: http://localhost:9093
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        enable:
+          idempotence: true
     consumer:
       auto-offset-reset: earliest
       bootstrap-servers: http://localhost:9093
