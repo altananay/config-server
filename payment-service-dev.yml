@@ -4,7 +4,7 @@ spring:
   datasource:
     username: postgres
     password: '12345'
-    url: jdbc:postgresql://localhost:5432/turkcell-paymentDb
+    url: jdbc:postgresql://localhost:5433/turkcell-paymentDb
   jpa:
     properties:
       hibernate:
@@ -33,4 +33,5 @@ management:
       probability: 1.0
   zipkin:
     tracing:
+
       endpoint: http://localhost:9411/api/v2/spans
