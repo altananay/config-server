@@ -4,7 +4,7 @@ spring:
   datasource:
     username: postgres
     password: '12345'
-    url: jdbc:postgresql://localhost:5432/turkcell-rentalDb
+    url: jdbc:postgresql://localhost:5434/turkcell_rentaldb
   jpa:
     properties:
       hibernate:
