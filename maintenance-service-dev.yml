@@ -4,7 +4,7 @@ spring:
   datasource:
     username: postgres
     password: '12345'
-    url: jdbc:postgresql://localhost:5432/turkcell-turkcellMaintenanceDb
+    url: jdbc:postgresql://localhost:5432/turkcellmaintenancedb
   jpa:
     properties:
       hibernate:
@@ -56,3 +56,4 @@ management:
     tracing:
 
       endpoint: http://localhost:9411/api/v2/spans
+
