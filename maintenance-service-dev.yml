@@ -1,6 +1,11 @@
 spring:
   application:
     name: MAINTENANCE-SERVICE
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8081/realms/RentACarMicroservice/protocol/openid-connect/certs
   datasource:
     username: postgres
     password: '12345'
