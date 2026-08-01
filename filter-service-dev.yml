@@ -8,10 +8,7 @@ spring:
           jwk-set-uri: http://localhost:8081/realms/RentACarMicroservice/protocol/openid-connect/certs
   data:
     mongodb:
-      database: turkcell-filterdb
-      uri: mongodb://localhost:27017
-      username: turkcell
-      password: 12345
+      uri: mongodb://turkcell:12345@localhost:27017/turkcell-filterdb?authSource=admin
   kafka:
     consumer:
       auto-offset-reset: earliest
