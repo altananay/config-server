@@ -6,6 +6,16 @@ spring:
       resourceserver:
         jwt:
           jwk-set-uri: http://localhost:8081/realms/RentACarMicroservice/protocol/openid-connect/certs
+      client:
+        registration:
+          keycloak:
+            client-id: rental-service
+            client-secret: c1FPpE3vRbn8paRgQU4cCvWanBVX0VDk
+            authorization-grant-type: client_credentials
+            scope: openid, profile, email
+        provider:
+          keycloak:
+            token-uri: http://localhost:8081/realms/RentACarMicroservice/protocol/openid-connect/token
   datasource:
     username: postgres
     password: '12345'
